@@ -1,0 +1,51 @@
+/* Ajuste de la ficha de historia para pantallas estrechas. */
+@media (max-width: 820px) {
+  .luz-redesign .story-index {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: end;
+    column-gap: .65rem;
+    padding: 0 0 2rem;
+  }
+
+  .luz-redesign .story-index .index-label {
+    min-width: 0;
+    font-size: clamp(.46rem, 2.25vw, .58rem);
+    letter-spacing: .11em;
+    line-height: 1.35;
+  }
+
+  .luz-redesign .story-index .index-label:first-child {
+    justify-self: start;
+  }
+
+  .luz-redesign .story-index strong {
+    margin: 0;
+    font-size: clamp(2.2rem, 12vw, 3rem);
+    line-height: .9;
+    white-space: nowrap;
+  }
+
+  .luz-redesign .story-index .index-label:last-child {
+    justify-self: end;
+    text-align: right;
+  }
+}
+
+@media (max-width: 360px) {
+  .luz-redesign .story-index {
+    grid-template-columns: 1fr;
+    row-gap: .5rem;
+    align-items: start;
+  }
+
+  .luz-redesign .story-index strong {
+    grid-row: 2;
+  }
+
+  .luz-redesign .story-index .index-label:last-child {
+    grid-row: 3;
+    justify-self: start;
+    text-align: left;
+  }
+}
