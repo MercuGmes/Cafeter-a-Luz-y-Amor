@@ -1,4 +1,4 @@
-# ☕ Luz y Amor — Cafetería
+# ☕ Luz y Amor - Cafetería
 
 Sitio web oficial de **Luz y Amor**, una cafetería costarricense creada alrededor del café, la calidez y los pequeños detalles.
 
